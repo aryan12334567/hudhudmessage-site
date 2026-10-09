@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HudHudMessage · Your WhatsApp bill, read line by line</title>
+<meta name="description" content="Free WhatsApp bill check for Indian D2C brands. See what you pay above Meta's price, how you compare with brands like you, and get the extra removed. We never send your messages.">
+<meta name="theme-color" content="#0B2A21">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="HudHudMessage · Your WhatsApp bill, read line by line">
+<meta property="og:description" content="Free WhatsApp bill check for Indian D2C brands. We read your bill, compare it with brands like you, and show where the extra sits.">
+<meta property="og:type" content="website">
+<!-- DEPLOY STEP: og:url and og:image point at the live GitHub Pages address; change both if the site moves to hudhudmessage.com -->
+<meta property="og:url" content="https://aryan12334567.github.io/hudhudmessage-site/">
+<meta property="og:image" content="https://aryan12334567.github.io/hudhudmessage-site/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@500;600&family=Geist+Mono:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- The hoopoe, drawn once, used everywhere. Cream bird knocked out of the tile colour. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="hoopoe" viewBox="0 0 1106 886"><path fill="var(--bird,#F5EDD6)" fill-rule="evenodd" d="M107.1 881.5C91.8 878.0 80.4 869.7 74.4 857.5C70.8 850.3 70.8 849.9 71.2 840.8C72.1 821.6 78.2 814.6 116.0 789.5C166.7 755.7 204.9 727.1 248.0 690.5C256.5 683.3 266.1 675.4 269.3 673.1C283.6 662.3 273.4 668.1 200.5 712.2C105.2 769.8 84.5 780.5 60.6 784.2C44.8 786.6 28.1 781.3 17.1 770.2C6.9 760.0 2.5 747.2 5.0 734.7C6.6 726.6 8.8 722.4 15.5 715.2C25.0 705.0 31.4 702.4 81.0 689.0C110.6 681.0 180.1 657.7 216.6 643.5L228.8 638.8L243.1 641.4C266.3 645.5 276.3 646.4 297.5 646.3C329.3 646.2 356.4 641.7 389.0 631.0C449.0 611.4 502.5 574.1 533.7 530.0C545.9 512.9 549.9 503.0 548.7 492.7C547.5 483.2 544.2 478.5 522.2 455.3C496.8 428.5 487.2 417.7 486.5 414.7C485.9 412.4 500.3 375.2 507.0 361.9C516.9 342.2 532.6 320.2 547.2 305.8C552.6 300.5 556.6 295.9 556.2 295.7C554.0 294.3 529.8 292.0 512.5 291.5C489.8 290.8 477.5 289.3 464.5 285.5C449.1 281.0 436.7 273.0 432.5 264.9C428.1 256.4 430.1 245.2 437.3 238.3C461.7 214.4 534.2 222.5 602.0 256.5C608.0 259.5 613.2 262.0 613.5 262.0C614.5 262.0 604.6 253.5 596.0 247.0C572.6 229.2 550.3 218.2 509.5 204.3C481.4 194.7 469.1 189.2 453.4 178.8C431.0 164.0 418.7 147.2 417.3 129.4C416.5 120.0 419.0 112.9 425.3 106.6C434.4 97.5 444.4 94.0 461.6 94.0C501.6 94.0 546.8 115.2 590.5 154.7C617.9 179.4 643.2 210.8 660.0 240.9C663.5 247.0 666.4 251.9 666.6 251.7C666.8 251.6 665.9 247.6 664.6 243.0C653.6 203.5 633.2 169.9 593.4 125.8C571.3 101.3 561.7 88.4 553.0 71.4C536.6 39.4 541.5 12.6 565.0 5.6C572.6 3.3 580.2 3.6 591.6 6.5C612.0 11.7 632.4 24.3 652.1 43.9C670.6 62.3 682.8 79.5 695.5 104.9C703.2 120.2 706.9 129.5 711.5 144.7C721.9 178.8 724.6 227.3 718.1 260.8C716.8 267.4 716.6 270.3 717.4 270.9C718.0 271.4 723.5 275.1 729.5 279.1C742.5 287.8 761.8 306.5 769.7 318.1C779.9 333.0 788.6 354.0 793.2 374.4L794.5 380.2L802.0 383.0C811.3 386.4 850.3 403.4 870.5 412.8C891.0 422.3 913.5 432.0 915.1 432.0C916.7 432.0 949.2 423.4 999.0 409.7C1028.1 401.8 1033.6 400.6 1040.5 400.6C1047.2 400.5 1049.3 401.0 1053.5 403.2C1063.7 408.6 1065.5 412.1 1074.5 446.1C1078.7 461.7 1085.0 484.6 1088.5 497.0C1102.5 546.8 1103.2 549.9 1102.8 557.5C1102.3 565.4 1099.9 570.9 1094.8 575.9C1088.0 582.6 1086.7 583.0 991.5 608.5C971.7 613.8 944.0 621.2 930.0 625.0C859.2 644.1 861.5 643.6 849.8 640.0C841.5 637.5 836.1 632.8 832.7 625.3C831.3 622.1 827.1 608.5 823.5 595.0C819.9 581.5 811.9 553.0 805.8 531.5C797.0 500.8 794.7 491.2 794.7 486.4C794.8 475.6 800.2 467.0 810.1 462.0C815.1 459.4 840.2 451.5 849.8 449.5C857.7 447.8 850.4 448.1 822.4 450.5C769.0 455.0 758.2 456.6 743.8 462.4C740.4 463.8 737.4 464.7 737.0 464.4C735.7 463.0 737.1 442.0 739.0 434.5C741.4 424.8 747.4 412.0 753.6 403.1C758.0 396.9 758.2 396.3 757.7 391.4C756.3 378.2 745.5 359.6 731.2 345.8C723.7 338.6 720.5 336.3 711.9 332.1C688.2 320.6 665.8 319.3 643.0 328.1C608.4 341.4 583.0 379.7 583.0 418.5C583.0 441.0 589.3 458.3 608.1 487.1C623.7 511.0 629.4 524.5 633.1 546.2C634.8 556.0 635.1 560.9 634.7 570.0C632.1 621.2 603.3 664.4 550.8 695.6C525.7 710.5 501.1 718.8 467.5 723.6C458.7 724.9 449.3 725.3 432.5 725.3C408.2 725.2 396.7 723.9 363.5 717.6C340.1 713.1 324.1 714.5 307.0 722.6C292.5 729.5 288.6 733.1 234.3 791.3C173.9 856.0 162.6 866.9 147.0 874.9C133.2 882.0 119.5 884.3 107.1 881.5ZM886.1 611.9C946.1 595.5 961.8 591.2 992.5 583.0C1011.2 578.0 1035.3 571.4 1046.0 568.5C1056.7 565.5 1067.4 562.6 1069.7 562.0C1074.7 560.7 1078.0 557.0 1078.0 552.6C1078.0 549.4 1074.9 537.9 1058.9 481.2C1053.8 463.0 1049.3 448.0 1049.0 448.1C1048.7 448.1 1042.5 456.1 1035.1 465.8C1008.2 501.2 973.4 544.4 969.6 547.2C964.1 551.2 956.0 553.4 949.0 552.7C945.2 552.4 936.7 549.6 922.9 544.2C903.8 536.6 892.7 532.1 844.0 512.1C833.3 507.7 824.4 504.5 824.2 504.9C824.0 505.4 829.3 524.8 835.9 548.1C842.4 571.4 848.8 594.3 850.0 599.0C855.1 619.7 856.2 620.1 886.1 611.9ZM276.5 612.9C236.4 609.1 191.7 595.2 160.5 576.6C146.3 568.1 126.0 552.1 113.9 539.9C95.0 520.9 85.3 506.7 76.9 486.0C69.5 467.6 67.2 455.8 70.4 451.4C71.8 449.6 73.1 449.5 102.9 449.9C120.0 450.1 134.0 450.0 134.0 449.7C134.0 449.4 129.7 447.1 124.4 444.6C103.9 434.9 78.9 418.6 63.3 404.9C40.8 385.0 22.1 355.9 13.5 327.5C8.3 310.1 6.7 298.5 7.3 280.5C8.1 254.4 9.8 253.4 34.5 265.1C61.6 278.1 94.8 292.0 98.5 292.0C99.2 292.0 96.2 286.6 91.6 279.6C76.6 257.2 65.1 230.4 59.9 206.0C56.8 191.6 56.5 158.7 59.4 143.5C63.4 121.8 77.6 86.9 86.1 77.8C92.6 70.9 95.6 72.4 108.5 89.3C113.2 95.4 122.7 106.9 129.7 114.9C167.5 157.7 192.3 181.4 268.0 246.5C316.9 288.5 340.1 309.6 375.0 343.5C399.8 367.5 417.7 386.8 446.5 420.5C459.7 435.9 478.4 456.8 488.0 466.9C513.8 494.0 516.3 496.9 515.6 499.6C515.2 500.9 511.3 506.8 506.8 512.7C480.0 547.8 442.3 575.5 396.0 594.0C354.9 610.4 315.9 616.6 276.5 612.9ZM956.3 526.0C957.7 524.9 968.7 511.3 980.8 495.8C992.9 480.2 1010.0 458.3 1018.9 447.1C1027.7 435.8 1034.8 426.5 1034.6 426.2C1034.3 426.0 1031.8 426.5 1028.8 427.4C1025.9 428.2 1016.3 430.8 1007.5 433.0C983.6 439.2 959.6 445.6 939.9 451.0C930.3 453.7 912.9 458.4 901.4 461.4C852.9 474.2 831.8 479.9 831.3 480.4C831.0 480.7 832.0 481.4 833.6 482.0C835.2 482.6 852.0 489.5 871.0 497.2C953.8 531.0 951.0 530.1 956.3 526.0ZM636.5 410.8C634.2 408.1 633.9 406.9 634.2 402.9C635.3 391.6 645.5 378.5 657.7 372.7C663.9 369.8 665.3 369.5 674.5 369.5C683.8 369.5 685.0 369.7 691.0 372.7C702.9 378.6 712.4 389.0 715.1 399.1C717.2 406.9 713.4 412.3 706.0 412.3C702.3 412.3 699.8 410.2 696.1 403.6C688.7 390.3 675.2 386.3 663.3 393.6C659.4 396.0 657.8 397.9 654.8 404.0C650.7 412.0 648.5 413.9 642.8 414.0C639.9 414.0 638.6 413.3 636.5 410.8Z"/></symbol>
+</svg>
+
+<div class="env" aria-hidden="true"><div class="env-glow"></div></div>
+
+<header class="nav" id="top">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="HudHudMessage home">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="#215D41"/><use href="#hoopoe" x="10.0" y="14.6" width="46" height="36.8"/></svg>
+      <span class="wordmark">HudHud<span>Message</span></span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="#basics">How a bill works</a>
+      <a href="#data">Comparison</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-sm" href="#check">Check my bill free</a>
+    <button class="menu" aria-expanded="false" aria-controls="sheet" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+  <div class="sheet" id="sheet" hidden>
+    <a href="#basics">How a bill works</a><a href="#data">Comparison</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="btn" href="#check">Check my bill free</a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ HERO: the bill, read as you scroll ============ -->
+<section class="hero" aria-label="Your WhatsApp bill, read line by line">
+  <div class="stage">
+    <div class="dust" aria-hidden="true"></div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="band b1" data-a="0" data-b="0.20">
+          <p class="kicker">For Indian D2C brands on WhatsApp</p>
+          <h1 class="h-hero"><span class="w">Your</span> <span class="w">WhatsApp</span> <span class="w">bill,</span> <span class="w">read</span> <span class="w">line</span> <span class="w">by</span> <span class="w">line.</span></h1>
+          <p class="sub">Most brands pay more than Meta's price on every WhatsApp message, and the invoice never says where. We read yours for free and show you, next to brands like you.</p>
+          <div class="cta-row">
+            <a class="btn" href="#check">Check my bill free</a>
+            <a class="link" href="#basics">How a WhatsApp bill works <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="fine">We never send your messages. You keep your current provider.</p>
+        </div>
+        <div class="band b2 beat" data-a="0.22" data-b="0.47">
+          <p class="kicker">Line 1</p>
+          <h2 class="h-beat"><span class="half l">Every message has</span> <span class="half r">two prices inside it.</span></h2>
+          <p class="sub">Meta's price, and your provider's extra on top. Then 18% GST on both.</p>
+        </div>
+        <div class="band b3 beat" data-a="0.49" data-b="0.73">
+          <p class="kicker">Line 2</p>
+          <h2 class="h-beat">Some messages are billed at <span class="pen-word">the wrong price.<svg viewBox="0 0 220 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16C60 8 150 6 216 12" pathLength="1"/></svg></span></h2>
+          <p class="sub">An order update with one discount line can be billed as marketing. Same message, 7.5 times the price.</p>
+        </div>
+        <div class="band b4 beat" data-a="0.75" data-b="1">
+          <p class="kicker">The total</p>
+          <h2 class="h-beat">This is the number we find for you.</h2>
+          <p class="sub">Free, from your last invoice. Example brand shown.</p>
+          <div class="cta-row"><a class="btn" href="#check">Check my bill free</a></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <svg class="bird-fly" viewBox="0 0 1106 886" aria-hidden="true" style="--bird:#F5EDD6"><use href="#hoopoe"/></svg>
+        <div class="invoice" role="img" aria-label="Example WhatsApp invoice: ₹2,18,654 total. Read line by line, ₹34,035 is the provider's extra above Meta's price and ₹14,962 comes from order updates billed as marketing. Possible extra: ₹48,997 a month.">
+          <div class="inv-head">
+            <div><p class="mono">WhatsApp invoice · September</p><p class="inv-co">Example D2C brand</p></div>
+            <p class="mono inv-tag">Example</p>
+          </div>
+          <div class="inv-line l-mkt">
+            <div class="row"><span>Marketing messages</span><span class="mono q">1,50,000 × ₹1.09</span><span class="amt">₹1,63,500</span></div>
+            <div class="split">
+              <div class="row sub-row"><span><i class="dot ok"></i>Meta's price</span><span class="mono q">₹0.8631 each</span><span class="amt">₹1,29,465</span></div>
+              <div class="row sub-row hot"><span><i class="dot hot"></i>Your provider's extra</span><span class="mono q">₹0.2269 each</span><span class="amt">₹34,035</span></div>
+              <div class="bar"><b class="ok" style="--w:79.2%"></b><b class="hot" style="--w:20.8%"></b></div>
+            </div>
+          </div>
+          <div class="inv-line l-ord">
+            <div class="row"><span>Order updates</span><span class="mono q">20,000 × ₹1.09</span><span class="amt">₹21,800</span></div>
+            <div class="flag"><span class="mono">Billed as marketing</span><span>should be utility at ₹0.115</span><span class="amt hot-t">+₹14,962</span></div>
+            <svg class="pen" viewBox="0 0 400 70" preserveAspectRatio="none" aria-hidden="true"><path d="M30 38C24 14 120 6 220 8s178 8 174 30c-3 22-120 28-210 27S18 60 24 34c3-14 40-24 90-26" pathLength="1"/></svg>
+          </div>
+          <div class="inv-totals">
+            <div class="row"><span>Subtotal</span><span></span><span class="amt">₹1,85,300</span></div>
+            <div class="row"><span>GST 18%</span><span></span><span class="amt">₹33,354</span></div>
+            <div class="row total"><span>Total due</span><span></span><span class="amt">₹2,18,654</span></div>
+          </div>
+          <div class="inv-sum">
+            <span class="mono">Possible extra, before GST</span>
+            <span class="big"><span class="count" data-to="48997">₹48,997</span><small> a month</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cue" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<!-- ============ THE BASICS ============ -->
+<section class="sec basics" id="basics">
+  <div class="wrap basics-grid">
+    <div class="basics-intro reveal">
+      <p class="kicker k-dark">The basics</p>
+      <h2 class="h2">How a WhatsApp bill is built</h2>
+      <p class="lede">Meta sets a price for every message your brand sends. Your provider (AiSensy, Interakt, WATI, Gupshup or another) delivers it and adds its own charge on top. This is Meta's India price list from 1 October 2026.</p>
+      <ul class="facts">
+        <li>Meta charges when a message is delivered, not when it's sent.</li>
+        <li>Messages your customers send you are free.</li>
+        <li>Customers who arrive from a Click-to-WhatsApp ad can open a 72-hour free window.</li>
+      </ul>
+    </div>
+    <div class="ratecard reveal" role="table" aria-label="Meta's India WhatsApp prices per delivered message">
+      <div class="rc-head" role="row"><span role="columnheader">Message type</span><span role="columnheader">Used for</span><span role="columnheader" class="r">Meta's price</span></div>
+      <div class="rc-row rc-mkt" role="row"><span role="cell" class="rc-type">Marketing</span><span role="cell">Offers, launches, cart reminders, broadcasts</span><span role="cell" class="r mono">₹0.8631</span></div>
+      <div class="rc-row" role="row"><span role="cell" class="rc-type">Utility</span><span role="cell">Order confirmations, shipping and delivery updates</span><span role="cell" class="r mono">₹0.115</span></div>
+      <div class="rc-row" role="row"><span role="cell" class="rc-type">Service</span><span role="cell">Your team's replies to customers who message you</span><span role="cell" class="r mono">₹0.115<small>after 1,000 free a month per number</small></span></div>
+      <div class="rc-row" role="row"><span role="cell" class="rc-type">Authentication</span><span role="cell">OTPs and login codes</span><span role="cell" class="r mono">₹0.115</span></div>
+      <p class="src">Source: Meta's India rate card from 1 October 2026. Your provider's price is added on top, then 18% GST.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHERE THE EXTRA HIDES ============ -->
+<section class="sec leaks">
+  <div class="wrap leaks-grid">
+    <div class="leaks-title">
+      <p class="kicker k-dark">Where the extra hides</p>
+      <h2 class="h2">Three places money leaks out of the bill</h2>
+      <p class="lede">None of these show up as a line on your invoice. That's why most brands never see them.</p>
+    </div>
+    <ol class="leak-list">
+      <li class="leak reveal">
+        <span class="num mono">01</span>
+        <div><h3 class="h3">The extra on every message</h3>
+        <p>Providers add their charge on top of Meta's price. Published price lists we checked in October 2026 go from Meta's own price to about 26% above it on marketing, and up to about 74% above on utility. Some extra is fair, because your provider runs the software. The question is whether yours is fair for a brand your size.</p></div>
+        <div class="leak-viz" aria-hidden="true"><span class="lv-bar"><b style="--w:79%"></b><b class="hot" style="--w:21%"></b></span></div>
+      </li>
+      <li class="leak reveal">
+        <span class="num mono">02</span>
+        <div><h3 class="h3">Messages billed at the wrong price</h3>
+        <p>A shipping update is utility, ₹0.115. Add one discount line and Meta can class it as marketing, ₹0.8631. Same message, 7.5 times the price, every single time it goes out.</p></div>
+        <div class="leak-viz" aria-hidden="true"><span class="lv-pair"><i>₹0.115</i><i class="hot">₹0.8631</i></span></div>
+      </li>
+      <li class="leak reveal">
+        <span class="num mono">03</span>
+        <div><h3 class="h3">Price changes nobody noticed</h3>
+        <p>Meta changed WhatsApp prices in July 2025, January 2026 and October 2026. Providers change their plans too. Most brands find out months later, from the bank statement.</p></div>
+        <div class="leak-viz" aria-hidden="true"><span class="lv-dates mono"><i>Jul 25</i><i>Jan 26</i><i>Oct 26</i></span></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ INTERACTIVE: READ YOUR OWN BILL ============ -->
+<section class="sec calc" id="calc">
+  <div class="wrap">
+    <div class="calc-head reveal">
+      <p class="kicker k-dark">Try it</p>
+      <h2 class="h2">Read your own bill in 20 seconds</h2>
+      <p class="lede">Move the sliders to match your brand. The bill splits as you go.</p>
+    </div>
+    <div class="calc-card reveal">
+      <div class="calc-in">
+        <div class="field">
+          <label for="msgs">Marketing messages you send a month</label>
+          <div class="ctl"><input type="range" id="msgs" min="10000" max="1000000" step="5000" value="150000"><output id="msgs-o" class="mono" for="msgs">1,50,000</output></div>
+        </div>
+        <div class="field">
+          <label for="price">What you pay per marketing message (₹)</label>
+          <div class="ctl"><input type="range" id="price" min="0.86" max="1.40" step="0.01" value="1.09"><output id="price-o" class="mono" for="price">₹1.09</output></div>
+          <p class="help">It's on your invoice or your provider's price page. Not sure? Leave it at ₹1.09.</p>
+        </div>
+        <div class="field">
+          <label for="upd">Order updates that might be billed as marketing</label>
+          <div class="ctl"><input type="range" id="upd" min="0" max="200000" step="1000" value="20000"><output id="upd-o" class="mono" for="upd">20,000</output></div>
+          <p class="help">Order or delivery messages with an offer or discount line added.</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite">
+        <div class="stack" aria-hidden="true"><b class="ok" id="seg-meta"></b><b class="hot" id="seg-extra"></b><b class="hot2" id="seg-wrong"></b></div>
+        <dl class="res">
+          <div><dt><i class="dot ok"></i>Meta's price for your marketing messages</dt><dd class="mono" id="r-meta">₹1,29,465</dd></div>
+          <div><dt><i class="dot hot"></i>Paid above Meta's price</dt><dd class="mono" id="r-extra">₹34,035</dd></div>
+          <div><dt><i class="dot hot2"></i>Order updates billed at the wrong price</dt><dd class="mono" id="r-wrong">₹14,962</dd></div>
+        </dl>
+        <div class="res-big">
+          <span class="mono">Possible extra</span>
+          <span class="pen-wrap"><strong id="r-total">₹48,997</strong><svg class="pen pen-calc" viewBox="0 0 300 80" preserveAspectRatio="none" aria-hidden="true"><path d="M26 44C20 16 100 6 170 8s124 10 120 34c-3 24-90 32-160 30S14 64 20 38c3-12 30-22 70-26" pathLength="1"/></svg></span>
+          <span class="per">a month, about <b id="r-year">₹5,87,964</b> a year</span>
+        </div>
+        <p class="note">An estimate before 18% GST. Some extra is normal, because your provider also charges for its software. We tell you whether yours is fair compared with similar brands.</p>
+        <a class="btn" href="#check" id="calc-cta">Check my real bill free</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY COMPARISON MATTERS ============ -->
+<section class="sec data dark" id="data">
+  <div class="data-pin">
+    <div class="wrap data-grid">
+      <div class="data-copy">
+        <p class="kicker">Why comparison matters</p>
+        <h2 class="h2">Your bill alone can't tell you what's fair. Brands like you can.</h2>
+        <p class="lede">Is ₹1.09 a message a good price? On its own, nobody knows. Put it next to 20 brands of the same size, on the same provider, sending the same kind of message, and the answer is obvious. That's the comparison we're building, one shared invoice at a time.</p>
+      </div>
+      <figure class="chart" aria-label="Illustration: price per marketing message across a growing group of similar brands. Below 8 brands no comparison is shown. With more brands the typical range narrows to around ₹0.95 to ₹0.99, and the example brand at ₹1.09 sits clearly above it.">
+        <div class="chart-top">
+          <span class="mono">Price per marketing message · similar brands</span>
+          <span class="mono n-wrap">Brands in this group: <b id="n-count">1</b></span>
+        </div>
+        <div class="plot" id="plot">
+          <div class="axis" aria-hidden="true"><span style="--x:0%">₹0.85</span><span style="--x:33.3%">₹0.95</span><span style="--x:66.6%">₹1.05</span><span style="--x:100%">₹1.15</span></div>
+          <div class="meta-line" style="--x:4.4%"><span class="mono">Meta ₹0.86</span></div>
+          <div class="range" id="range"><span class="mono">Typical</span></div>
+          <div class="dots" id="dots"></div>
+          <div class="you" style="--x:80%"><span class="mono">You ₹1.09</span></div>
+          <p class="empty mono" id="empty">Not enough brands to compare yet</p>
+        </div>
+        <figcaption class="mono">Illustration. Real comparisons appear only after 8 similar brands have shared invoices.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="wrap">
+    <ul class="gains">
+      <li class="reveal"><span class="mono num">01</span><h3 class="h3">A fair price, in rupees</h3><p>"Brands your size on your provider pay ₹0.97 a message. You pay ₹1.09." That one line changes a negotiation.</p></li>
+      <li class="reveal"><span class="mono num">02</span><h3 class="h3">Which messages bring orders</h3><p>Compare your cost per order with similar brands, message by message. Keep the reminders that sell, fix the ones that only cost money.</p></li>
+      <li class="reveal"><span class="mono num">03</span><h3 class="h3">What Meta approves</h3><p>Every template Meta approves or rejects across our brands teaches us what passes as utility. You get that learning on day one.</p></li>
+      <li class="reveal"><span class="mono num">04</span><h3 class="h3">Early warning</h3><p>When a provider raises prices for many brands at once, you hear about it the same month, not from next year's bank statement.</p></li>
+    </ul>
+    <p class="rules mono reveal">Anonymous <i></i> Groups of 8 or more <i></i> Same provider, message type and size <i></i> Invoices under 6 months old <i></i> No customer data</p>
+    <p class="index-note reveal">Every quarter we'll publish a free India WhatsApp price index from the anonymous totals. The more brands share, the sharper it gets for everyone.</p>
+  </div>
+</section>
+
+<!-- ============ THE GOAL ============ -->
+<section class="sec goal">
+  <div class="wrap goal-in reveal">
+    <p class="kicker k-dark">What we measure</p>
+    <p class="statement">Sending fewer messages is easy. Helping more customers for less is the real job.</p>
+    <p class="lede">We never cut a message that brings an order or answers a customer. We track two numbers every month: what it costs to resolve one customer, and what it costs to win one order. If those don't improve, we haven't done our job.</p>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="sec how" id="how">
+  <div class="wrap">
+    <div class="how-head reveal">
+      <p class="kicker k-dark">How it works</p>
+      <h2 class="h2">Three steps. Nothing changes for your team.</h2>
+    </div>
+    <ol class="steps reveal">
+      <svg class="steps-line" viewBox="0 0 1000 4" preserveAspectRatio="none" aria-hidden="true"><path d="M0 2H1000" pathLength="1"/></svg>
+      <li><span class="step-n mono">01</span><h3 class="h3">Share your last invoice</h3><p>Email or upload it. No logins, nothing to install. Read only, and we're happy to sign an NDA.</p></li>
+      <li><span class="step-n mono">02</span><h3 class="h3">Get your bill, read</h3><p>Within 48 hours: your price per message against Meta's, any messages billed at the wrong price, and how you compare once your group has 8 brands.</p></li>
+      <li><span class="step-n mono">03</span><h3 class="h3">Fix it, or let us</h3><p>Your team can make the changes. Or we do it: we negotiate with your provider and get templates re-approved by Meta. You approve every change.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ NOT YOUR PROVIDER ============ -->
+<section class="sec notbsp dark">
+  <div class="wrap notbsp-grid">
+    <div class="reveal">
+      <p class="kicker">Whose side we're on</p>
+      <h2 class="h2">We read the bill. We never send the messages.</h2>
+      <p class="lede">Think of your provider as your electricity company. We're the person who reads the bill, gets the wrong charges removed, and shows which appliances waste power.</p>
+    </div>
+    <div class="vs reveal" role="table" aria-label="Your WhatsApp provider compared with HudHudMessage">
+      <div class="vs-row vs-head" role="row"><span role="columnheader"></span><span role="columnheader">Your provider</span><span role="columnheader">HudHudMessage</span></div>
+      <div class="vs-row" role="row"><span role="rowheader">Sends your WhatsApp messages</span><span role="cell">Yes</span><span role="cell">No, never</span></div>
+      <div class="vs-row" role="row"><span role="rowheader">Earns more when you send more</span><span role="cell">Yes</span><span role="cell">No. We earn when you pay less</span></div>
+      <div class="vs-row" role="row"><span role="rowheader">Takes money from providers</span><span role="cell">Not applicable</span><span role="cell">Never. We work only for the brand</span></div>
+      <div class="vs-row" role="row"><span role="rowheader">You need to switch anything</span><span role="cell">Not applicable</span><span role="cell">No. Keep your provider and setup</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="sec pricing" id="pricing">
+  <div class="wrap">
+    <div class="pricing-head reveal">
+      <p class="kicker k-dark">Ways to work with us</p>
+      <h2 class="h2">Start by knowing. Pay only if it's worth it.</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <p class="mono c-name">Free bill check</p>
+        <p class="c-price">₹0</p>
+        <p class="c-for">For founders who want to know where they stand.</p>
+        <ul><li>Your real price per message against Meta's</li><li>Your price against your provider's own price list</li><li>Comparison with similar brands, once 8 or more have shared</li></ul>
+        <a class="btn btn-line" href="#check" data-pick="Free bill check">Check my bill free</a>
+      </article>
+      <article class="card reveal">
+        <p class="mono c-name">Monthly cost report</p>
+        <p class="c-price">From ₹2,000<small>/month</small></p>
+        <p class="c-for">For teams that will make the changes themselves.</p>
+        <ul><li>A short report every month</li><li>Price rises and wrong-price templates flagged</li><li>Cost per resolved customer and per order</li><li>Comparison with similar brands</li></ul>
+        <a class="btn btn-line" href="#check" data-pick="Monthly cost report">Join the waitlist</a>
+      </article>
+      <article class="card reveal">
+        <p class="mono c-name">We fix it for you</p>
+        <p class="c-price">Share of savings</p>
+        <p class="c-for">For founders who don't have the hours.</p>
+        <ul><li>Everything in the monthly report</li><li>We negotiate with your provider</li><li>We fix templates and get Meta's approval</li><li>You pay only after the saving shows on your invoice. No saving, no fee.</li></ul>
+        <a class="btn btn-line" href="#check" data-pick="We fix it for you">Talk to us</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHERE WE ARE TODAY ============ -->
+<section class="sec status">
+  <div class="wrap status-grid">
+    <div class="reveal">
+      <p class="kicker k-dark">Where we are today</p>
+      <h2 class="h2">New, and honest about it.</h2>
+      <p class="lede">HudHudMessage is two founders reading real invoices with our first brands. You won't see customer logos or reviews here yet, because we don't have any to show. Just the maths, which you can check yourself.</p>
+    </div>
+    <dl class="trust reveal">
+      <div><dt class="mono">Your data</dt><dd>We use your invoice only to read your bill. We never share your brand's name or numbers.</dd></div>
+      <div><dt class="mono">Comparisons</dt><dd>Shown only as anonymous groups of at least 8 similar brands.</dd></div>
+      <div><dt class="mono">Our side</dt><dd>We never take money from WhatsApp providers.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="reveal">
+      <p class="kicker k-dark">FAQ</p>
+      <h2 class="h2">Questions founders ask us</h2>
+    </div>
+    <div class="acc reveal">
+      <details><summary>Are you a WhatsApp provider like AiSensy or WATI?</summary><div class="ans"><p>No. We never send messages. You keep your current provider and setup. We only look at what you're charged and help bring it down.</p></div></details>
+      <details><summary>Do I have to switch providers?</summary><div class="ans"><p>No. Most of the time the fix is a better price from your current provider, or templates moved to the right category.</p></div></details>
+      <details><summary>Isn't some extra on top of Meta's price normal?</summary><div class="ans"><p>Yes. Your provider charges for its software and support. The question is whether your price is fair for a brand your size. That's what the comparison shows you.</p></div></details>
+      <details><summary>Can't I just put my bill into ChatGPT?</summary><div class="ans"><p>You can, and it will tell you part of the story. It can't tell you what brands like yours actually pay, and it won't negotiate with your provider or get templates re-approved by Meta. That's the part we do.</p></div></details>
+      <details><summary>Will cutting costs hurt my sales?</summary><div class="ans"><p>We don't cut messages that bring orders or answer customers. We track your cost per order and cost per resolved customer every month, so you can see sales held while cost fell.</p></div></details>
+      <details><summary>What happens to the invoice I share?</summary><div class="ans"><p>We use it only to read your bill and, without your brand's name, to build the comparison. Comparisons show only groups of 8 or more similar brands. We never need your customers' personal data.</p></div></details>
+      <details><summary>How do you measure the saving you charge for?</summary><div class="ans"><p>Before we start, we record your price per message for each message type from your last 3 invoices. Each month we compare against that. You sign off the numbers before we bill.</p></div></details>
+      <details><summary>What changed on 1 October 2026?</summary><div class="ans"><p>Order updates sent while a customer chat is open now cost ₹0.115 each. The first 1,000 support replies per number each month stay free, and messages from customers are free. Marketing messages are still the biggest part of most bills.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE FORM ============ -->
+<section class="sec check" id="check">
+  <div class="wrap check-grid">
+    <div class="check-copy reveal">
+      <p class="kicker k-dark">Free bill check</p>
+      <h2 class="h2">Get your bill read, free</h2>
+      <p class="lede">Tell us a little about your brand. We'll reply within 2 working days with how to share your invoice safely.</p>
+      <svg class="check-bird" viewBox="0 0 1106 886" aria-hidden="true" style="--bird:#215D41"><use href="#hoopoe"/></svg>
+    </div>
+    <form class="form reveal" id="lead" novalidate>
+      <div class="f2">
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="field"><label for="f-brand">Brand name</label><input id="f-brand" name="brand" autocomplete="organization" required></div>
+      <div class="f2">
+        <div class="field"><label for="f-bsp">Your WhatsApp provider</label><select id="f-bsp" name="provider"><option>AiSensy</option><option>Interakt</option><option>WATI</option><option>Gupshup</option><option>Other</option><option selected>Not sure</option></select></div>
+        <div class="field"><label for="f-bill">Monthly WhatsApp bill</label><select id="f-bill" name="bill"><option>Under ₹50,000</option><option>₹50,000 to ₹1.5 lakh</option><option>₹1.5 lakh to ₹5 lakh</option><option>Over ₹5 lakh</option><option selected>Not sure</option></select></div>
+      </div>
+      <div class="f2">
+        <div class="field"><label for="f-want">What are you interested in?</label><select id="f-want" name="interest"><option>Free bill check</option><option>Monthly cost report</option><option>We fix it for you</option></select></div>
+        <div class="field"><label for="f-phone">Phone or WhatsApp <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <p class="err" id="f-err" role="alert" hidden></p>
+      <button class="btn btn-full" type="submit">Get my free bill check</button>
+      <p class="fine-d">Pressing the button opens your email app with your details filled in, addressed to us. Just press send. No payment, no spam.</p>
+      <div class="done" id="f-done" hidden tabindex="-1">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M14 25l7 7 13-15" pathLength="1"/></svg>
+        <p class="done-h">Your email app should have opened, <span id="f-who"></span>.</p>
+        <p>Press send and we'll reply within 2 working days. If nothing opened, write to <a href="mailto:aryan@hudhudmessage.com">aryan@hudhudmessage.com</a>.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand brand-foot" href="#top" aria-label="HudHudMessage, back to top">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="#F1F4EE"/><use href="#hoopoe" x="10.0" y="14.6" width="46" height="36.8" style="--bird:#215D41"/></svg>
+        <span class="wordmark">HudHud<span>Message</span></span>
+      </a>
+      <p class="foot-line">Named after the hudhud, the hoopoe, a bird that carries messages. We read yours.</p>
+    </div>
+    <div>
+      <p class="mono foot-h">Talk to the founders</p>
+      <ul class="people">
+        <li><b>Aryan Subramanya</b><a href="mailto:aryan@hudhudmessage.com">aryan@hudhudmessage.com</a><span class="phone" data-phone=""></span></li>
+        <li><b>Raghav Dua</b><a href="mailto:raghav@hudhudmessage.com">raghav@hudhudmessage.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mono foot-h">On this page</p>
+      <ul class="foot-links"><li><a href="#basics">How a bill works</a></li><li><a href="#data">Comparison</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="#check">Get a free bill check</a></li></ul>
+    </div>
+  </div>
+  <p class="wrap legal">© 2026 HudHudMessage. WhatsApp is a trademark of Meta Platforms, Inc. HudHudMessage is independent and not affiliated with Meta or any WhatsApp provider.</p>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
