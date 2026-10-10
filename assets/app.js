@@ -39,7 +39,8 @@
   const MQLS = GATES.map(q => matchMedia(q));
   let scrubOn = false, target = 0, shown = 0, rafId = null, lastTick = 0, heroOnScreen = true;
   const inv = { s: -1, f: -1, t: -1, cue: -1 };
-  let lastCount = '', lastCountAt = 0;
+  let lastCount = null, lastHeat = -1, lastTilt = -1;
+  const HH = window.HH || (window.HH = { odo: (el, v) => { el.textContent = inr(v); } });
 
   const heroProgress = () => {
     const r = hero.getBoundingClientRect();
@@ -71,8 +72,12 @@
     setVar(invoice, '--f', fl, inv, 'f');
     setVar(invoice, '--t', t, inv, 't');
     setVar(cue, '--cue', clamp(p / 0.08, 0, 1), inv, 'cue');
-    const label = t >= 0.999 ? inr(48997) : inr(48997 * t);
-    if (label !== lastCount && (now - lastCountAt > 100 || t >= 0.999 || t === 0)) { lastCount = label; lastCountAt = now; count.textContent = label; }
+    const odoOn = t > 0.45;
+    if (odoOn !== lastCount) { lastCount = odoOn; HH.odo(count, odoOn ? 48997 : 0); }
+    const heat = Math.max(s * 0.3, fl * 0.75, t);
+    if (Math.abs(heat - lastHeat) > 0.01) { lastHeat = heat; HH.setHeat && HH.setHeat(heat); }
+    const tilt = 1 - smooth(p, 0.02, 0.22);
+    if (Math.abs(tilt - lastTilt) > 0.004) { lastTilt = tilt; invoice.style.setProperty('--lift', tilt.toFixed(3)); }
   }
 
   function tick(now) {
@@ -95,7 +100,9 @@
     bands.forEach(bd => { bd.el.style.removeProperty('--o'); bd.el.style.removeProperty('--k'); bd.el.removeAttribute('inert'); bd.el.classList.remove('live'); bd.o = bd.k = -1; bd.live = null; });
     ['--s', '--f', '--t'].forEach(v => invoice.style.removeProperty(v));
     inv.s = inv.f = inv.t = inv.cue = -1;
-    count.textContent = inr(48997); lastCount = '';
+    HH.odo(count, 48997); lastCount = null; lastHeat = lastTilt = -1;
+    invoice.style.removeProperty('--lift');
+    HH.setHeat && HH.setHeat(0.55);
   }
   const art = $('.hero-art');
   function fitInvoice() {
@@ -159,7 +166,7 @@
     out.meta.textContent = inr(metaPart);
     out.extra.textContent = inr(extra);
     out.wrong.textContent = inr(wrong);
-    out.total.textContent = inr(total);
+    HH.odo(out.total, total);
     out.year.textContent = inr(total * 12);
     seg.meta.style.flexGrow = metaPart; seg.extra.style.flexGrow = extra; seg.wrong.style.flexGrow = wrong;
     [msgs, price, upd].forEach(fill);

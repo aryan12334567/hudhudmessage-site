@@ -54,6 +54,8 @@
 <!-- ============ HERO: the bill, read as you scroll ============ -->
 <section class="hero" aria-label="Your WhatsApp bill, read line by line">
   <div class="stage">
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
     <div class="dust" aria-hidden="true"></div>
     <div class="hero-grid">
       <div class="hero-copy">
@@ -120,6 +122,20 @@
     <div class="cue" aria-hidden="true"><span></span></div>
   </div>
 </section>
+
+<!-- ============ RATE TICKER ============ -->
+<div class="ticker" role="marquee" aria-label="Meta's WhatsApp prices in India from 1 October 2026: marketing 86 paise, utility, service and authentication 11.5 paise">
+  <div class="ticker-track" aria-hidden="true">
+    <span><b>META RATE CARD</b> India · from 1 Oct 2026</span><i></i>
+    <span>Marketing <b class="hot">₹0.8631</b></span><i></i>
+    <span>Utility <b>₹0.115</b></span><i></i>
+    <span>Service <b>₹0.115</b> after 1,000 free</span><i></i>
+    <span>Authentication <b>₹0.115</b></span><i></i>
+    <span>Customer messages <b>free</b></span><i></i>
+    <span>Marketing costs <b class="hot">7.5×</b> utility</span><i></i>
+    <span>Provider extra <b class="hot">up to ~26%</b> on marketing</span><i></i>
+  </div>
+</div>
 
 <!-- ============ THE BASICS ============ -->
 <section class="sec basics" id="basics">
@@ -428,9 +444,11 @@
       <ul class="foot-links"><li><a href="#basics">How a bill works</a></li><li><a href="#data">Comparison</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="#check">Get a free bill check</a></li></ul>
     </div>
   </div>
+  <p class="giant" aria-hidden="true">HudHudMessage</p>
   <p class="wrap legal">© 2026 HudHudMessage. WhatsApp is a trademark of Meta Platforms, Inc. HudHudMessage is independent and not affiliated with Meta or any WhatsApp provider.</p>
 </footer>
 
+<script src="assets/fx.js" defer></script>
 <script src="assets/app.js" defer></script>
 </body>
 </html>
